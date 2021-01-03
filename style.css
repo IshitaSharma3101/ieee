@@ -2,11 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body{
+    display: inline-block;
     margin: 0px;
+    width: 100%;
+    height: auto;
     background-image: url(/FerrariBackground.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    background-size: cover;
 }
 
 .main-heading{
@@ -14,7 +18,7 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 3px;
     display:inline-block;
-    border-bottom:3px solid yellow;
+    border-bottom:4px solid yellow;
     padding-bottom:2px;
     font-size: 3rem;
     margin-left: 3rem;
@@ -41,9 +45,13 @@ body{
 }
 
 .container{
-    max-width: 800px;
-    float: right;
+    width: 730px;
+    height: 200px;
     margin-right: 1rem;
+    overflow: hidden;
+    float: right;
+    position: relative;
+    top: 8vh
 }
 
 ul {
@@ -64,14 +72,50 @@ h1 {
 }
 
 header{
-    display: inline;
+    display: inline-block;
     max-width: 400px;
+    position: relative;
 }
 
 .heading{
     display: inline-block;
     max-width: 400px;
+    position: absolute;
 }
 
 
+nav{
+    display: inline-block;
+    width: 100%;
+}
 
+
+.list-item-2{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-bottom:4px solid red;
+    padding-bottom:15px;
+}
+
+.navbar-2{
+    display: inline;
+    transform: rotate(-90deg);
+    margin: 0px 1rem;
+    overflow: hidden;
+}
+
+.container-2{
+    overflow: hidden;
+    transform: rotate(-90deg);
+    margin-left: -150px;
+    margin-top: 100px
+}
+
+.active-2{
+    border-bottom:4px solid yellow;
+}
