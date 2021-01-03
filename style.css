@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body{
     margin: 0px;
@@ -10,13 +11,66 @@ body{
 
 .main-heading{
     color: #D4D4D8;
-    /* text-decoration: underline;
-    text-decoration-color: yellow; */
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 3px;
     display:inline-block;
     border-bottom:3px solid yellow;
     padding-bottom:2px;
+    font-size: 3rem;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+}
+
+.list-item{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #D4D4D8;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+.active{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder
+}
+
+.navbar{
+    display: inline-block;
+    padding: 0px 0.5rem;
+}
+
+.container{
+    max-width: 800px;
+    float: right;
+    margin-right: 1rem;
+}
+
+ul {
+    display: inline-block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+h1 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+header{
+    display: inline;
+    max-width: 400px;
+}
+
+.heading{
+    display: inline-block;
+    max-width: 400px;
 }
 
 
