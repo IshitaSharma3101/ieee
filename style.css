@@ -7,7 +7,7 @@ body {
     margin: 0px;
     width: 100%;
     height: auto;
-    background-image: url(/FerrariBackground.jpg);
+    background: url(/FerrariBackground.jpg) top center fixed no-repeat;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -189,5 +189,9 @@ nav {
         top: 8vh;
         background-color:
             #171717;
+    }
+
+    body {
+        background: url(/FerrariBackground.jpg) top center fixed no-repeat;
     }
 }
