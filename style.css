@@ -1,58 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-body{
+
+body {
     display: inline-block;
     margin: 0px;
     width: 100%;
     height: auto;
-    background-image: url(/FerrariBackground.jpg);
+    background-image: url(/images/FerrariBackground.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
 
-.main-heading{
-    color: #D4D4D8;
-    font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing: 3px;
-    display:inline-block;
-    border-bottom:4px solid yellow;
-    padding-bottom:2px;
-    font-size: 3rem;
-    margin-left: 3rem;
-    margin-top: 1.5rem;
-}
-
-.list-item{
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    color: #D4D4D8;
-    letter-spacing: 2px;
-    font-size: 1.1rem;
-}
-
-.active{
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bolder
-}
-
-.navbar{
-    display: inline-block;
-    padding: 0px 0.5rem;
-}
-
-.container{
-    width: 730px;
-    height: 200px;
-    margin-right: 1rem;
-    overflow: hidden;
-    float: right;
-    position: relative;
-    top: 8vh
-}
 
 ul {
     display: inline-block;
@@ -64,6 +25,7 @@ ul {
     padding-inline-start: 0px;
 }
 
+
 h1 {
     margin-block-start: 0em;
     margin-block-end: 0em;
@@ -71,26 +33,102 @@ h1 {
     margin-inline-end: 0px;
 }
 
-header{
+
+header {
     display: inline-block;
     max-width: 400px;
     position: relative;
 }
 
-.heading{
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+/********** HEADER **********/
+
+
+.heading {
     display: inline-block;
     max-width: 400px;
     position: absolute;
 }
 
 
-nav{
+.main-heading {
+    color: #D4D4D8;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 3px;
     display: inline-block;
-    width: 100%;
+    border-bottom: 4px solid yellow;
+    padding-bottom: 2px;
+    font-size: 3rem;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
 }
 
 
-.list-item-2{
+
+/********** TOP NAV BAR **********/
+
+
+.container-top {
+    width: 730px;
+    height: 200px;
+    margin-right: 1rem;
+    overflow: hidden;
+    float: right;
+    position: relative;
+    top: 8vh
+}
+
+
+.container-top li {
+    display: inline-block;
+    padding: 0px 0.5rem;
+}
+
+
+.container-top a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #D4D4D8;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+
+.container-top .active-top {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
+
+/********** SIDE NAV BAR **********/
+
+
+.container-side {
+    overflow: hidden;
+    transform: rotate(-90deg);
+    margin-left: -150px;
+    margin-top: 100px
+}
+
+
+.container-side li {
+    display: inline;
+    transform: rotate(-90deg);
+    margin: 0px 1rem;
+    overflow: hidden;
+}
+
+
+.container-side a {
     display: inline-block;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
@@ -98,24 +136,59 @@ nav{
     color: white;
     font-size: 1rem;
     font-weight: bolder;
-    border-bottom:4px solid red;
-    padding-bottom:15px;
+    border-bottom: 4px solid red;
+    padding-bottom: 15px;
 }
 
-.navbar-2{
-    display: inline;
-    transform: rotate(-90deg);
-    margin: 0px 1rem;
-    overflow: hidden;
+
+.container-side .active-side {
+    border-bottom: 4px solid yellow;
 }
 
-.container-2{
-    overflow: hidden;
-    transform: rotate(-90deg);
-    margin-left: -150px;
-    margin-top: 100px
+
+
+/********** MEDIA QUERIES **********/
+
+
+@media screen and (max-width: 1010px) {
+    .container-top {
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 15px;
+        float: left;
+        top: 8vh;
+        background-color:
+            #171717
+    }
+
+    .container-side {
+        overflow: hidden;
+        transform: rotate(-90deg);
+        margin-left: -150px;
+        margin-top: 250px
+    }
 }
 
-.active-2{
-    border-bottom:4px solid yellow;
+
+@media screen and (max-width: 745px) {
+
+    .container-top li {
+        display: block;
+        padding: 2.5px 0.5rem;
+    }
+
+    .container-top {
+        width: 100%;
+        height: 160px;
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 15px;
+        float: left;
+        top: 8vh;
+        background-color:
+            #171717;
+    }
+
 }
